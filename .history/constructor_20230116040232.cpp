@@ -12,7 +12,6 @@ public:
     // It is used to initialize the objects of its class
     // It is automatically invoked whenever an object is created
     // constructor Declaration
-
     Complex(void);
 
     void printNumber()

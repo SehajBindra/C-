@@ -210,9 +210,8 @@ int main()
     cout << "Your id - ";
     cin >> i;
     // implicit call
-    Student s1(n, s, c, i);
-    s1.display()
+    Student s(n, s, c, i);
 
-        // s.(jappanjot,maths,bca,12)
-        return 0;
+    // s.(jappanjot,maths,bca,12)
+    return 0;
 }

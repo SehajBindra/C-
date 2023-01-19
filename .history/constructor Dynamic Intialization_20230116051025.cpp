@@ -91,128 +91,64 @@
 //     return 0;
 // };
 
-// #include <iostream>
-
-// using namespace std;
-
-// class Student
-// {
-
-//     string name;
-//     int age;
-//     string subject;
-//     string course;
-
-// public:
-//     Student() {}
-
-//     Student(string n, int a, string sub, string c);
-
-//     void displayData();
-// };
-
-// // scope resolution
-// Student ::Student(string n, int a, string sub, string c)
-// {
-
-//     name = n;
-//     age = a;
-//     subject = sub;
-//     course = c;
-// }
-
-// void Student ::displayData()
-// {
-//     cout << "Student Name is " << name << endl;
-//     cout << " Student is " << age << " Years old " << endl;
-//     cout << "Student fav Subject is " << subject << endl;
-//     cout << "Student is pursuing " << course << endl;
-// }
-
-// int main()
-// {
-//     Student s1;
-
-//     string n, sub, c;
-//     int a;
-
-//     cout << "Your Name - ";
-//     cin >> n;
-
-//     cout << "Your Age - ";
-//     cin >> a;
-
-//     cout << "Your Fav Subject - ";
-//     cin >> sub;
-
-//     cout << "Your Course - ";
-//     cin >> c;
-
-//     // explicit call
-//     s1 = Student(n, a, sub, c);
-//     s1.displayData();
-
-//     return 0;
-// }
-
-// Q. make class using constructor while taking user from input
-
 #include <iostream>
+
 using namespace std;
 
 class Student
 {
-    int id;
-    string name, subject, course;
+
+    string name;
+    int age;
+    string subject;
+    string course;
 
 public:
     Student() {}
-    Student(string n, string s, string c, int i)
-    {
-        name = n;
-        subject = s;
-        course = c;
-        id = i;
-    }
 
-    void display()
-    {
-        cout << "name of the student is " << name;
-        cout << "course of the student is " << course;
-        cout << "sub of the student is " << subject;
-        cout << "id of the student is " << id;
-    }
+    Student(string n, int a, string sub, string c);
 
-    // void getvalues()
-    // {
-    //     cin >> name;
-    //     cin >> course;
-    //     cin >> subject;
-    //     cin >> id;
-    // }
+    void displayData();
 };
+
+// scope resolution
+Student ::Student(string n, int a, string sub, string c)
+{
+
+    name = n;
+    age = a;
+    subject = sub;
+    course = c;
+}
+
+void Student ::displayData()
+{
+    cout << "Student Name is " << name << endl;
+    cout << " Student is " << age << " Years old " << endl;
+    cout << "Student fav Subject is " << subject << endl;
+    cout << "Student is pursuing " << course << endl;
+}
 
 int main()
 {
 
-    string n, s, c;
-    int i;
+    string n, sub, c;
+    int a;
 
     cout << "Your Name - ";
     cin >> n;
 
-    cout << "Your  subject - ";
-    cin >> s;
+    cout << "Your Age - ";
+    cin >> a;
 
-    cout << "Your  course - ";
+    cout << "Your Fav Subject - ";
+    cin >> sub;
+
+    cout << "Your Course - ";
     cin >> c;
 
-    cout << "Your id - ";
-    cin >> i;
-    // implicit call
-    Student s1(n, s, c, i);
-    s1.display()
+    Student s1(n, a, sub, c);
+    s1.displayData();
 
-        // s.(jappanjot,maths,bca,12)
-        return 0;
+    return 0;
 }

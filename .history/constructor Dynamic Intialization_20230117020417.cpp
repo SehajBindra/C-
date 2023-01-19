@@ -211,8 +211,8 @@ int main()
     cin >> i;
     // implicit call
     Student s1(n, s, c, i);
-    s1.display()
+    s1.display();
 
-        // s.(jappanjot,maths,bca,12)
-        return 0;
+    // s.(jappanjot,maths,bca,12)
+    return 0;
 }

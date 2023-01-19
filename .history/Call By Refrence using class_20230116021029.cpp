@@ -5,12 +5,12 @@ using namespace std;
 class Swap
 {
 public:
-    void swapReference(int &a, int &b)
+        void swapReference(int &a, int &b)
     {
         int temp = a;
         a = b;
         b = temp;
-        }
+    }
 };
 int main()
 {

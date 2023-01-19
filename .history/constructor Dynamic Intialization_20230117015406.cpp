@@ -177,42 +177,26 @@ public:
 
     void display()
     {
-        cout << "name of the student is " << name;
-        cout << "course of the student is " << course;
-        cout << "sub of the student is " << subject;
-        cout << "id of the student is " << id;
+        cout << "name of the student is " << n;
+        cout << "course of the student is " << c;
+        cout << "sub of the student is " << s;
+        cout << "id of the student is " << i;
     }
 
-    // void getvalues()
-    // {
-    //     cin >> name;
-    //     cin >> course;
-    //     cin >> subject;
-    //     cin >> id;
-    // }
+    void getvalues()
+    {
+        cin >> name;
+        cin >> course;
+        cin >> subject;
+        cin >> id;
+    }
 };
 
 int main()
 {
-
-    string n, s, c;
-    int i;
-
-    cout << "Your Name - ";
-    cin >> n;
-
-    cout << "Your  subject - ";
-    cin >> s;
-
-    cout << "Your  course - ";
-    cin >> c;
-
-    cout << "Your id - ";
-    cin >> i;
-    // implicit call
-    Student s1(n, s, c, i);
-    s1.display()
-
-        // s.(jappanjot,maths,bca,12)
-        return 0;
+    Student s;
+    s.getvalues();
+    s.display();
+    // s.(jappanjot,maths,bca,12)
+    return 0;
 }

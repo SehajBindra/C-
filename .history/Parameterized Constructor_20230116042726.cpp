@@ -33,6 +33,7 @@ int main()
     h1.PrintNumber();
 
     // explicit call
+
     Hello h2 = Hello(24, 32);
     h2.PrintNumber();
 
