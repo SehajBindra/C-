@@ -15,7 +15,7 @@ public:
     {
         a = num;
     }
-    // When no copy constructor is found, compiler supplies its own copy constructor
+
     // Number(Number &obj)
     // {
     //     cout << "Copy constructor called !!!" << endl;
@@ -27,9 +27,7 @@ public:
         cout << "The number for this object is " << a << endl;
     }
 };
-/*
- note: copy constructor will not invoked or call when object is already created.
-*/
+
 int main()
 {
 
@@ -41,11 +39,16 @@ int main()
     //  z1 = x ;
     //   z1 = y;
     Number z1(z);
-
     z1.display();
 
-    Number z3 = z;
-    z3.display();
+    //
+
+    // Number z3 = z;
+    // z3.display();
 }
 
-/
+/*
+ note: copy constructor will not invoked or call when object is created.
+*/
+
+// When no copy constructor is found, compiler supplies its own copy constructor

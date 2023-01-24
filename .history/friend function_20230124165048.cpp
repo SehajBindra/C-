@@ -47,8 +47,6 @@ int main()
     return 0;
 }
 
-// another way of doing the same thing
-
 // class Complex
 // {
 

@@ -1,69 +1,3 @@
-
-#include <iostream>
-using namespace std;
-
-// forward declaration
-class Complex;
-
-class Calculator
-{
-public:
-    int sum(Complex, Complex);
-    int Multiply(Complex, Complex);
-};
-
-class Complex
-{
-    int a, b;
-
-    // Individually declaring functions as friends
-    friend int Calculator ::sum(Complex, Complex);
-    friend int Calculator ::Multiply(Complex, Complex);
-
-public:
-    void getData(int n1, int n2)
-    {
-        a = n1;
-        b = n2;
-    }
-
-    void displayData()
-    {
-        cout << "the value of a is - " << a << endl;
-        cout << "the value of b is - " << b << endl;
-    }
-};
-
-int Calculator ::sum(Complex c1, Complex c2)
-{
-    return c1.a + c2.b;
-}
-
-int Calculator ::Multiply(Complex c1, Complex c2)
-{
-    return c1.a * c2.b;
-}
-
-int main()
-{
-    Complex c1, c2;
-    int a, b;
-    cout << "\n Enter the  value of a -   ";
-    cin >> a;
-    cout << "\n Enter the value of b -  ";
-    cin >> b;
-    c1.getData(a, b);
-    c2.getData(a, b);
-
-    Calculator calc;
-
-    int sum = calc.sum(c1, c2);
-    cout << "The sum of a and b is: " << sum << endl;
-
-    int product = calc.Multiply(c1, c2);
-    cout << "The product of a and b is: " << product << endl;
-}
-
 // #include <iostream>
 // using namespace std;
 
@@ -199,3 +133,71 @@ int main()
 // //     calc.sum(c1, c2);
 // //     calc.Multiply(c1, c2);
 // // }
+
+#include <iostream>
+using namespace std;
+
+// forward declaration
+class Complex;
+
+class Calculator
+{
+public:
+    int sum(Complex, Complex);
+    int Multiply(Complex, Complex);
+};
+
+class Complex
+{
+    int a, b;
+
+    // Individually declaring functions as friends
+    friend int Calculator ::sum(Complex, Complex);
+    friend int Calculator ::Multiply(Complex, Complex);
+
+public:
+    void getData(int n1, int n2)
+    {
+        a = n1;
+        b = n2;
+    }
+
+    void displayData()
+    {
+        cout << "the value of a is - " << a << endl;
+        cout << "the value of b is - " << b << endl;
+    }
+};
+
+int Calculator ::sum(Complex c1, Complex c2)
+{
+    c1.a + c2.b;
+    // return c1.a + c2.b;
+}
+
+int Calculator ::Multiply(Complex c1, Complex c2)
+{
+    c1.a *c2.b;
+}
+
+int main()
+{
+    Complex c1, c2;
+    int a, b;
+    cout << "\n Enter the  value of a -   ";
+    cin >> a;
+    cout << "\n Enter the value of b -  ";
+    cin >> b;
+    c1.getData(a, b);
+    c2.getData(a, b);
+
+    Calculator calc;
+
+    int sum = calc.sum(c1, c2);
+    cout << "The sum of a and b is: " << sum << endl;
+
+    int product = calc.Multiply(c1, c2);
+    cout << "The product of a and b is: " << product << endl;
+
+    return 0;
+}

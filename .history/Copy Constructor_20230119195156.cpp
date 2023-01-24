@@ -27,9 +27,7 @@ public:
         cout << "The number for this object is " << a << endl;
     }
 };
-/*
- note: copy constructor will not invoked or call when object is already created.
-*/
+
 int main()
 {
 
@@ -44,8 +42,13 @@ int main()
 
     z1.display();
 
+        Number z2 = z;
+    z2.display();
+
     Number z3 = z;
     z3.display();
 }
 
-/
+/*
+ note: copy constructor will not invoked or call when object is created.
+*/
