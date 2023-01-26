@@ -5,10 +5,10 @@ using namespace std;
 class Swap
 {
 
-    // int a, b;
-
+    // int a, b; private data members
     // priavte , protected
 public:
+    // declaration & intialization
     void swapReference(int &a, int &b)
     {
         int temp = a;
