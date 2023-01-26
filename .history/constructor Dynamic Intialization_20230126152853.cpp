@@ -19,7 +19,7 @@ public:
         course = c;
     };
 
-    void displayData()
+      void displayData()
     {
         cout << "Student Name is " << name << endl;
         cout << " Student is " << age << " Years old " << endl;

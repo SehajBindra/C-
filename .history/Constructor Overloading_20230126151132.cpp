@@ -11,15 +11,12 @@ public:
     // intializing and declaration
     // so constructor overloading is basically when
     // there is multiple constructors inside the same class
-
-    // default constructor
     Complex()
     {
         a = 0;
         b = 0;
     }
 
-    // parameterized Constructor
     Complex(int x, int y)
     {
         a = x;
@@ -34,7 +31,7 @@ public:
 
     void printNumber()
     {
-        cout << "Your number is " << a + b << endl;
+        cout << "Your number is " << a << " + " << b << endl;
     }
 };
 

@@ -32,7 +32,7 @@ public:
 
 int main()
 {
-    // implicit call basically means we can also insert values in objects.
+    // implicit call
     Hello h1(8, 16);
     h1.PrintNumber();
 
