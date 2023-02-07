@@ -40,9 +40,9 @@ int main()
 
     Number z1 = x;
     //   z1 = y;
-    // Number z1(z);
-    // z2 = z;
-    // z1.display();
+    Number z1(z);
+    z2 = z;
+    z1.display();
 
     Number z3 = z;
     z3.display();

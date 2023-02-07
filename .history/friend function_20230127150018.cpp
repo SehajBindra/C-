@@ -31,7 +31,11 @@ Complex Sum(Complex c1, Complex c2)
     Complex c3;
     c3.a = c1.a + c2.a;
     c3.b = c1.b + c2.b;
-
+    // / c1.a = a for ex - a = 2
+    //     // c2.b = b -------- b = 4
+    //     // c3.getdata((2+4) , (2+4) ) = 6 , 6
+    //     // the value of a is 6
+    //     // the value of b is 6
     return c3;
 }
 

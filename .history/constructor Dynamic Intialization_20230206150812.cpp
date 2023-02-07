@@ -48,7 +48,7 @@ public:
 
 int main()
 {
-    // Student s1;
+    Student s1;
 
     string n, sub, c;
     int a;
