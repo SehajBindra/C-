@@ -1,7 +1,7 @@
 // why we make virtual base class
 // Virtual base classes in C++ are used to prevent multiple instances of a given class from appearing in an inheritance hierarchy when using multiple inheritances.
 
-// for example why we need virtual base class
+// for example
 // #include <iostream>
 // using namespace std;
 
